@@ -1,0 +1,108 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.suspense {
+  color: #61dafbaa;
+}
+.legacy {
+  color: #ffcc29;
+}
+
+.todo-loading {
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.user-loading {
+  margin: 0;
+  width: 425px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  box-shadow: 3px 3px 1px #0000000f;
+  border-radius: 50%;
+  width: 3.25em;
+  height: 3.25em;
+}
+.user-card {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.25em;
+}
+.user-info p {
+  margin: 0;
+  width: fit-content;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.todo {
+  display: flex;
+  gap: 0.25em;
+}
+.todo > p {
+  margin: 0em;
+  cursor: pointer;
+}
+.todo > input {
+  cursor: pointer;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
