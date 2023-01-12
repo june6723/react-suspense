@@ -9,7 +9,7 @@ type User = {
 };
 
 const getUser = (userId: number) => {
-  console.log('fetch user');
+  console.log('Async - fetch user');
   return fetch(`https://jsonplaceholder.typicode.com/users/${userId}`).then(
     response => response.json() as Promise<User>,
   );

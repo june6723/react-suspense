@@ -19,10 +19,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="content">
-        <UserLegacy userId={userId} />
         <Suspense fallback={<h2 className="user-loading suspense">User Loading...</h2>}>
           <UserWithSuspense userId={userId} />
         </Suspense>
+        <UserLegacy userId={userId} />
       </div>
       <div className="card">
         <button onClick={() => setUserId(id => id + 1)}>{`click to change userId`}</button>
